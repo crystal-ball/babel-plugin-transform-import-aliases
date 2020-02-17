@@ -1,1 +1,11 @@
+# --- Ignore ---
+
+# Dependencies
 node_modules
+
+# Build output
+dist
+public
+
+# Test output
+coverage

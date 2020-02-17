@@ -1,23 +1,31 @@
 {
-  "name": "babel-plugin-transform-import-alias",
-  "version": "0.0.1",
-  "description": "",
+  "name": "babel-plugin-transform-import-aliases",
+  "version": "1.0.0",
+  "description": "Transforms import aliases into resolveable paths",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crystal-ball/babel-plugin-transform-import-aliases.git"
+  },
   "keywords": [
-    "Babel"
+    "Babel",
+    "transform",
+    "import",
+    "alias"
   ],
   "contributors": [
     "Dan Hedgecock <hedgecock.d@gmail.com> (https://danhedgecock.com)"
   ],
   "license": "ISC",
   "scripts": {
+    "test": "npm run test:lint && npm run test:unit",
     "test:lint": "NODE_ENV=test eslint --format=pretty src",
     "test:unit": "jest src"
   },
   "devDependencies": {
-    "@babel/core": "7.8.3",
+    "@babel/core": "7.8.4",
     "@crystal-ball/prettier-base": "1.6.0",
-    "eslint-config-eloquence": "12.19.0",
+    "eslint-config-eloquence": "13.1.0",
     "jest": "25.1.0"
   },
   "prettier": "@crystal-ball/prettier-base"

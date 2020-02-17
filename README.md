@@ -1,12 +1,12 @@
-# babel-plugin-transform-import-alias
+# babel-plugin-transform-import-aliases
 
 ```javascript
 {
   plugins: [
-    "babel-plugin-transform-import-alias",
-    {
-      { aliases: { '@': fs.realpathSync(process.cwd()) } }
-    }
+    [
+      'babel-plugin-transform-import-aliases',
+      { aliases: { '@': path.resolve(fs.realpathSync(process.cwd()), 'src') } },
+    ],
   ]
 }
 ```
