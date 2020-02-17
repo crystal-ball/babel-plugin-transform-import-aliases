@@ -1,5 +1,8 @@
 # babel-plugin-transform-import-aliases
 
+Babel transform will convert an import alias, eg `@` to the specified path. This
+enables you to transform convenience aliases into resolveable paths with Babel.
+
 ```javascript
 {
   plugins: [
