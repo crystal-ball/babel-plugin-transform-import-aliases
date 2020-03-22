@@ -16,7 +16,7 @@ const FakeScreen = load(/* webpackChunkName: "HomeScreen" */ '@/screens/HomeScre
 
 it('transforms imports', () => {
   const { code } = babel.transform(content, {
-    plugins: [[plugin, { aliases: { '@': '/User/Rad/Code/src', ENV: '/tmp/env' } }]],
+    plugins: [[plugin, { aliases: { '@': '/User/Rad/Code/src', 'ENV': '/tmp/env' } }]],
   })
   expect(code).toMatchSnapshot()
 })

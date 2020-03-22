@@ -8,7 +8,7 @@ module.exports = function transformAlias({ types: t }) {
         const importSource = path.get('source')
         const { value } = importSource.node
 
-        Object.keys(aliases).forEach(alias => {
+        Object.keys(aliases).forEach((alias) => {
           if (value.startsWith(`${alias}/`)) {
             importSource.replaceWith(
               t.stringLiteral(value.replace(alias, aliases[alias])),
@@ -25,7 +25,7 @@ module.exports = function transformAlias({ types: t }) {
           const importSource = path.get('arguments.0')
           const { value } = importSource.node
 
-          Object.keys(aliases).forEach(alias => {
+          Object.keys(aliases).forEach((alias) => {
             if (value.startsWith(`${alias}/`)) {
               importSource.replaceWith(
                 t.stringLiteral(value.replace(alias, aliases[alias])),

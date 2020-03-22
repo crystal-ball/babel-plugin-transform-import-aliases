@@ -20,12 +20,13 @@
   "scripts": {
     "test": "npm run test:lint && npm run test:unit",
     "test:lint": "NODE_ENV=test eslint --format=pretty src",
-    "test:unit": "jest src"
+    "test:unit": "jest src",
+    "format": "prettier --write 'src/*.{js,json}'"
   },
   "devDependencies": {
-    "@babel/core": "7.8.7",
+    "@babel/core": "7.9.0",
     "@crystal-ball/commitizen-base": "2.4.0",
-    "@crystal-ball/prettier-base": "1.6.0",
+    "@crystal-ball/prettier-base": "2.0.0",
     "@crystal-ball/semantic-release-base": "2.15.0",
     "@types/jest": "25.1.4",
     "eslint-config-eloquence": "13.6.0",
