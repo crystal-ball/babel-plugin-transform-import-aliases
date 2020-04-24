@@ -1,6 +1,23 @@
 'use strict'
 
-module.exports = function transformAlias({ types: t }) {
+module.exports = function transformAlias({ types }) {
+  /**
+   * Check if the import value matches a configured alias and replace with
+   * alias path if matches
+   * @param {Object} aliases
+   * @param {Object} importSource
+   * @param {string} value
+   */
+  function checkAndReplaceImport(aliases, importSource, value) {
+    Object.keys(aliases).forEach((alias) => {
+      if (value.startsWith(`${alias}/`)) {
+        importSource.replaceWith(
+          types.stringLiteral(value.replace(alias, aliases[alias])),
+        )
+      }
+    })
+  }
+
   return {
     visitor: {
       ImportDeclaration(path, state) {
@@ -8,13 +25,7 @@ module.exports = function transformAlias({ types: t }) {
         const importSource = path.get('source')
         const { value } = importSource.node
 
-        Object.keys(aliases).forEach((alias) => {
-          if (value.startsWith(`${alias}/`)) {
-            importSource.replaceWith(
-              t.stringLiteral(value.replace(alias, aliases[alias])),
-            )
-          }
-        })
+        checkAndReplaceImport(aliases, importSource, value)
       },
 
       CallExpression(path, state) {
@@ -25,13 +36,7 @@ module.exports = function transformAlias({ types: t }) {
           const importSource = path.get('arguments.0')
           const { value } = importSource.node
 
-          Object.keys(aliases).forEach((alias) => {
-            if (value.startsWith(`${alias}/`)) {
-              importSource.replaceWith(
-                t.stringLiteral(value.replace(alias, aliases[alias])),
-              )
-            }
-          })
+          checkAndReplaceImport(aliases, importSource, value)
         }
       },
     },
