@@ -19,9 +19,9 @@
   "license": "ISC",
   "scripts": {
     "test": "npm run test:lint && npm run test:unit",
-    "test:lint": "NODE_ENV=test eslint --format=pretty src",
+    "test:lint": "NODE_ENV=test eslint --format=pretty --ext .js,.ts src",
     "test:unit": "jest src",
-    "format": "prettier --write 'src/*.{js,json}'"
+    "format": "prettier --write '*.{js,json,md}' '**/*.{js,json,md,mdx,scss}' !CHANGELOG.md"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
