@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`transforms imports 1`] = `
-"import Rad from \\"/User/Rad/Code/src/dux/rad\\";
+"import Rad from \\"../../dux/rad\\";
 import { css } from '@emotion/core';
 import { ENV } from \\"/tmp/env/dev\\";
 const HomeScreen = import(
 /* webpackChunkName: \\"HomeScreen\\" */
-\\"/User/Rad/Code/src/screens/HomeScreen/HomeScreen\\");
+\\"../../screens/HomeScreen/HomeScreen\\");
 
 function load() {}
 
