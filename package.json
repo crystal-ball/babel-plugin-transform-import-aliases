@@ -23,6 +23,9 @@
     "test:unit": "jest src",
     "format": "prettier --write '*.{js,json,md}' '**/*.{js,json,md,mdx,scss}' !CHANGELOG.md"
   },
+  "dependencies": {
+    "@babel/types": "^7.9.6"
+  },
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@crystal-ball/commitizen-base": "2.6.0",
