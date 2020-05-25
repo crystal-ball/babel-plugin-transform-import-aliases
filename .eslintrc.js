@@ -1,14 +1,5 @@
-module.exports = {
-  root: true,
-  extends: 'eloquence/node',
+'use strict'
 
-  overrides: [
-    {
-      files: ['*.spec.js'],
-      parserOptions: {
-        // TODO: setup Babel
-        sourceType: 'script',
-      },
-    },
-  ],
-}
+const eloquence = require('eslint-config-eloquence')
+
+module.exports = eloquence({ target: 'node', esm: false })

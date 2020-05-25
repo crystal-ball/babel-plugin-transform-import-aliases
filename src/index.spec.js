@@ -14,11 +14,12 @@ function load() {}
 const FakeScreen = load(/* webpackChunkName: "HomeScreen" */ '@/screens/HomeScreen/HomeScreen')
 `
 
-it('transforms imports', () => {
-  const { code } = babel.transformSync(content, {
+it('transforms imports', async () => {
+  const { code } = await babel.transformAsync(content, {
     plugins: [[plugin, { aliases: { '@': '/User/Rad/Code/src', 'ENV': '/tmp/env' } }]],
     // Tests the relative alias transforms
     filename: '/User/Rad/Code/src/components/App/App.ts',
   })
+
   expect(code).toMatchSnapshot()
 })
