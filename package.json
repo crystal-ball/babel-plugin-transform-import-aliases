@@ -23,8 +23,8 @@
     "test:unit": "jest src",
     "format": "prettier --write '*.{js,json,md}' '**/*.{js,json,md,mdx,scss}' !CHANGELOG.md"
   },
-  "dependencies": {
-    "@babel/types": "^7.9.6"
+  "peerDependencies": {
+    "@babel/types": "7"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
@@ -34,7 +34,7 @@
     "@types/jest": "25.2.1",
     "eslint-config-eloquence": "14.1.1",
     "husky": "4.2.5",
-    "jest": "25.4.0"
+    "jest": "26.0.1"
   },
   "prettier": "@crystal-ball/prettier-base",
   "config": {
