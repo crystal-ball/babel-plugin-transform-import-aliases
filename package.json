@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-import-aliases",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Transforms import aliases into resolveable paths",
   "main": "src/index.js",
   "repository": {

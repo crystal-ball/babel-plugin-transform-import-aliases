@@ -14,6 +14,17 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.2.0](https://github.com/crystal-ball/babel-plugin-transform-import-aliases/compare/v1.1.0...v1.2.0) (2020-05-25)
+
+
+#### ✨ Update
+
+* Package dependencies and peer dependencies([4bf0b43](https://github.com/crystal-ball/babel-plugin-transform-import-aliases/commit/4bf0b43dc83c8b5043d98e93edfae69bdbf81849))
+
+#### Chore
+
+* Update Eloquence 🆙 (#18)([966d327](https://github.com/crystal-ball/babel-plugin-transform-import-aliases/commit/966d3273d8d3398898c5d391cdfe31db9716f52c)), closes [#18](https://github.com/crystal-ball/babel-plugin-transform-import-aliases/issue/18)
+
 ## [1.1.0](https://github.com/crystal-ball/babel-plugin-transform-import-aliases/compare/v1.0.0...v1.1.0) (2020-05-20)
 
 
