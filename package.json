@@ -27,14 +27,14 @@
     "@babel/types": "7"
   },
   "devDependencies": {
-    "@babel/core": "7.11.6",
+    "@babel/core": "7.12.3",
     "@crystal-ball/commitizen-base": "2.8.0",
     "@crystal-ball/prettier-base": "2.4.0",
-    "@crystal-ball/semantic-release-base": "2.21.0",
-    "@types/jest": "26.0.14",
-    "eslint-config-eloquence": "16.3.1",
+    "@crystal-ball/semantic-release-base": "2.22.0",
+    "@types/jest": "26.0.15",
+    "eslint-config-eloquence": "16.5.0",
     "husky": "4.3.0",
-    "jest": "26.5.3"
+    "jest": "26.6.0"
   },
   "prettier": "@crystal-ball/prettier-base",
   "config": {
