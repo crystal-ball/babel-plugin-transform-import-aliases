@@ -27,7 +27,7 @@
     "@babel/types": "7"
   },
   "devDependencies": {
-    "@babel/core": "7.12.10",
+    "@babel/core": "7.12.13",
     "@crystal-ball/commitizen-base": "2.9.0",
     "@crystal-ball/prettier-base": "2.6.0",
     "@crystal-ball/semantic-release-base": "2.25.0",
