@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`transforms imports 1`] = `
+exports[`plugin transforms imports 1`] = `
 "import Rad from \\"../../dux/rad\\";
 import { css } from '@emotion/core';
 import { ENV } from \\"/tmp/env/dev\\";
