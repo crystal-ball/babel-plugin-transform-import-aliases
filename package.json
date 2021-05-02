@@ -33,7 +33,7 @@
     "@crystal-ball/prettier-base": "2.6.0",
     "@crystal-ball/semantic-release-base": "2.31.0",
     "@types/jest": "26.0.23",
-    "eslint-config-eloquence": "18.3.0",
+    "eslint-config-eloquence": "19.1.0",
     "jest": "26.6.3"
   }
 }
