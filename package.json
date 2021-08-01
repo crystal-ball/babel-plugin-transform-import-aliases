@@ -28,11 +28,11 @@
     "@babel/types": "7"
   },
   "devDependencies": {
-    "@babel/core": "7.14.6",
+    "@babel/core": "7.14.8",
     "@crystal-ball/commitizen-base": "2.11.0",
     "@crystal-ball/prettier-base": "2.7.0",
     "@crystal-ball/semantic-release-base": "2.32.0",
-    "@types/jest": "26.0.23",
+    "@types/jest": "26.0.24",
     "eslint-config-eloquence": "19.1.0",
     "jest": "27.0.6"
   }
