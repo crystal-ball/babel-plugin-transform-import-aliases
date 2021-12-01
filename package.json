@@ -32,8 +32,8 @@
     "@crystal-ball/commitizen-base": "2.11.0",
     "@crystal-ball/prettier-base": "2.9.0",
     "@crystal-ball/semantic-release-base": "2.34.0",
-    "@types/jest": "27.0.2",
+    "@types/jest": "27.0.3",
     "eslint-config-eloquence": "19.1.0",
-    "jest": "27.3.1"
+    "jest": "27.4.2"
   }
 }
